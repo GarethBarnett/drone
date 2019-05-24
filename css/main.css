@@ -1,0 +1,220 @@
+
+	body {
+		background-image: url("../img/background.jpg");
+		background-size: 100%;
+  
+		background-blend-mode: color-burn;
+		/*background-color: rgba(178, 34, 34, .7);*/
+		background-color: rgba(131, 172, 191, .7);
+
+		font-family: arial;
+
+		transition: .5s ease background-color;
+
+		overflow: hidden;
+	}
+
+	.overlay-sides {
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+15,0+85,0.65+100 */
+		background: -moz-linear-gradient(left, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 40%, rgba(0,0,0,0) 60%, rgba(0,0,0,0.6) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 60%,rgba(0,0,0,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 60%,rgba(0,0,0,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 */
+	}
+
+	.overlay-bottom {
+		min-height: 100vh;
+
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+85,0.65+100 */
+		background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 55%, rgba(0,0,0,0.55) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 55%,rgba(0,0,0,0.55) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 55%,rgba(0,0,0,0.55) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+	}
+
+	.logo {
+		display: block;
+		position: absolute;
+		top: 2%;
+		left: 50%;
+		background-image: url('../img/logo.png');
+		width: 100px;
+		height: 100px;
+
+		background-size: 100%;
+		transform: translateX(-50%);
+	}
+
+.prev {
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		top: 50%;
+		left: 2%;
+
+		background-image: url('../img/left-arrow.png');
+		
+		filter: invert(100%);
+
+		background-size: 100%;
+		transform: translateY(-50%) rotate(187deg);
+	}
+
+	.next {
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		top: 50%;
+		right: 2%;
+
+		background-image: url('../img/left-arrow.png');
+		
+		filter: invert(100%);
+
+		background-size: 100%;
+		transform: translateY(-50%);
+	}
+
+	.shoe-left {
+		position: absolute;
+	    top: 10%;
+	    left: 20%;
+	    display: block;
+	    width: 60%;
+
+	    z-index: 2;
+	}
+
+	.shoe-right {
+		position: absolute;
+	    top: 10%;
+	    right: 30%;
+	    display: block;
+	    width: 60%;
+
+	    z-index: 1;
+	}
+
+	footer {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		color: #fff;
+		text-align: center;
+		z-index: 999;
+	}
+
+	footer li {
+		display: inline-block;
+		padding: 20px 50px;
+	}
+
+	.model img {
+		width: 10%;
+
+	}
+
+	.date {
+		opacity: 1;
+		transition: .5s ease opacity;
+	}
+
+
+
+
+@-webkit-keyframes moveright
+{
+    from {
+        right: 0%;
+    }
+    to {
+        right: 140%;
+    }
+}
+
+
+a.right {
+   position: absolute;
+   -webkit-animation: moveright 60s;
+   animation-iteration-count: infinite;
+   width: 20%;
+
+}
+
+a.right img {
+	position: absolute;
+	top: 225px;
+	right: -200%;
+    width: 600px;
+}
+
+
+
+
+.cloud {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../img/cloud.png);
+	background-size: cover;
+
+	animation: animate 150s linear infinite;
+}
+
+@keyframes animate
+{
+
+	0%
+	{
+		background-position: 0%;
+	}
+	100%
+	{
+		background-position: 100%;
+	}
+
+}
+
+
+
+
+
+
+.drone {
+	position: absolute;
+		animation: shake 30s linear infinite;
+}
+
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-12px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d( 0, 4px, 0);
+  }
+
+  30%, 50% {
+    transform: translate3d(12px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d( 0, -4px, 0);
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
+
